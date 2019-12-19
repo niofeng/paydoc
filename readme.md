@@ -22,7 +22,7 @@
 ------------
 
 
-## 2. 代付
+## 2. 代付/商户代收
 
 **简要描述：** 
 
@@ -39,7 +39,7 @@
 
 |参数名|必选|类型|说明|
 |:----    |:---|:----- |-----   |
-|payType |是  |string |DF001:银行卡代付模式   |
+|payType |是  |string |DF001:银行卡代付模式  ZFB:支付宝代收 YHK:银行卡代收 |
 |price |是  |int | 代付金额，单位（分）    |
 |orderNO |是  |string | 商户订单中的唯一值，不可重复    |
 |appid |是  |int | 系统分配的唯一商户号  |
@@ -54,7 +54,7 @@
 |sign |是  |string | 数据签名|
 
 
- **创建成功**
+ **创建成功(代付)**
 
 ``` 
 {
@@ -63,6 +63,17 @@
     "data": {
 		"sysOrderNo": "xxxxxxxxxxxx" //平台订单号
 	}
+}
+```
+
+ **创建成功(代收)**
+
+``` 
+{
+    "code": 1,
+    "msg": "操作成功",
+    "sysOrderNo": "MERC12t2019121922474052tR",
+    "url": "http://api11.s-game88.com/index.php?r=Index/Index/jump&modelType=2&money=30000&payInterface=9&sysOrderNO=MERC12t2019121922474052tR"
 }
 ```
 
