@@ -51,6 +51,7 @@
 |notifyUrl |是  |string | 系统回调商户的通知地址|
 |memo |否  |string | 备注信息|
 |borrower |是  |string | 借款人|
+|orderType |是  |int | 代付类型 商户传1|
 |sign |是  |string | 数据签名|
 
 
