@@ -39,7 +39,7 @@
 
 |参数名|必选|类型|说明|
 |:----    |:---|:----- |-----   |
-|payType |是  |string |DF001:银行卡代付模式  ZFB:支付宝代收 YHK:银行卡代收 |
+|payType |是  |string |DF001:银行卡代付模式 ZFB:支付宝代收 YHK:银行卡代收 DYT:店员通代收|
 |price |是  |int | 代付金额，单位（分）    |
 |orderNO |是  |string | 商户订单中的唯一值，不可重复    |
 |appid |是  |int | 系统分配的唯一商户号  |
